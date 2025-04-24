@@ -14,7 +14,7 @@ const About = () => {
                 <Image
                   src="/images/profile-photo.png"
                   alt="Yash Kalbande"
-                  width={320}
+                  width={420}
                   height={320}
                   className="object-cover w-full h-full"
                   priority
@@ -22,7 +22,7 @@ const About = () => {
               </div>
 
               {/* Decorative background */}
-              <div className="absolute -bottom-5 -right-5 w-40 h-40 bg-blue-500/10 rounded-lg border border-blue-500/30 backdrop-blur-sm z-0"></div>
+              {/* <div className="absolute -bottom-5 -right-5 w-40 h-40 bg-blue-500/10 rounded-lg border border-blue-500/30 backdrop-blur-sm z-0"></div> */}
             </div>
 
             {/* Text Section */}
