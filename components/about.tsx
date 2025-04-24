@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -8,26 +8,24 @@ const About = () => {
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-12">About Me</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="flex justify-center">
-              <div className="relative">
-                {/* Circular image container */}
-                <div className="w-644 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-2 border-blue-500/30 relative group">
-                  {/* <div className="relative w-full h-full flex items-center justify-center overflow-hidden"> */}
-                    <Image
-                      src="/images/profile-photo.png"
-                      alt="Yash Kalbande"
-                      width={100}
-                      height={100}
-                      className="object-cover w-full h-full"
-                      priority
-                    />
-                  </div>
-                </div>
-                {/* Decorative background element */}
-                <div className="absolute -bottom-5 -right-5 w-40 h-40 bg-blue-500/10 rounded-lg border border-blue-500/30 backdrop-blur-sm z-0"></div>
+            {/* Image Section */}
+            <div className="flex justify-center relative">
+              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-2 border-blue-500/30 relative z-10">
+                <Image
+                  src="/images/profile-photo.png"
+                  alt="Yash Kalbande"
+                  width={320}
+                  height={320}
+                  className="object-cover w-full h-full"
+                  priority
+                />
               </div>
+
+              {/* Decorative background */}
+              <div className="absolute -bottom-5 -right-5 w-40 h-40 bg-blue-500/10 rounded-lg border border-blue-500/30 backdrop-blur-sm z-0"></div>
             </div>
 
+            {/* Text Section */}
             <div>
               <h3 className="text-2xl font-bold mb-4 gradient-text">Software Engineer & Data Analyst</h3>
               <p className="text-gray-700 mb-4">
@@ -68,7 +66,7 @@ const About = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;
